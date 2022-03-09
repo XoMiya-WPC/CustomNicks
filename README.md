@@ -6,8 +6,8 @@ A plugin for SCP: SL that allows setting of nicknames for players that will be a
 
 <h1>Requirements</h1>
 
-This plugin requires [EXILED](https://github.com/Exiled-Team/EXILED/releases "Exiled Releases") `5.0.0`
-This plugin **WILL NOT WORK** on previous versions
+This plugin requires [EXILED](https://github.com/Exiled-Team/EXILED/releases "Exiled Releases") `5.0.0`.
+This plugin **WILL NOT WORK** on previous versions.
 <h1>General Config</h1>
 
 | Config  | Type | Def Value |
@@ -21,7 +21,7 @@ This plugin **WILL NOT WORK** on previous versions
 
 <h1>Commands</h1>
 
-* **CNICK** - Parent command for the plugin which has 4 options for the subcommand, `add`, `update`, `remove`, `lookup`. The correct format for each is below
+* **CNICK** - Parent command for the plugin which has 4 options for the subcommand, `add`, `update`, `remove`, `lookup`. The correct format for each is below.
 > **cnick add (userid/playerid) (nickname)** *replace userid / playerid with either their ingame id (normally a one or two digit number or their userid@steam). Anything typed after this will be counted as their nickname. This will add a new player to the file.*
 
 > **cnick update (userid/playerid) (nickname)** *replace userid / playerid with either their ingame id (normally a one or two digit number or their userid@steam). Anything typed after this will be counted as their nickname This will only work if the user already exists and overite their current nickname.*
