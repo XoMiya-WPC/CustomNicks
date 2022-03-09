@@ -22,7 +22,7 @@ namespace CustomNicks
         {
 
             //Check if command sender has the correct permissions
-            if (!sender.CheckPermission("CustomNicks.Enick"))
+            if (!sender.CheckPermission("CustomNicks.cnick"))
             {
                 response = "You do not have permission to run this command";
                 return false;
