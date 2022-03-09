@@ -44,6 +44,8 @@ This plugin **WILL NOT WORK** on previous versions.
 
 This plugin was made originally to combat custom characters in steam names which make moderation difficult.
 
+Special thanks to SirMeepington and Masonic for keeping me in the right direction whilst doing this.
+
 For help or issues Contact me on Discord @ XoMiya#6113 or join my [discord](https://discord.gg/js4W9M5Csq "XoMiya's Kitchen")
 
 ![img](https://img.shields.io/github/downloads/XoMiya-WPC/CustomNicks/total?style=for-the-badge)
