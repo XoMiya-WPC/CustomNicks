@@ -23,8 +23,11 @@ This plugin **WILL NOT WORK** on previous versions
 
 * **CNICK** - Parent command for the plugin which has 4 options for the subcommand, `add`, `update`, `remove`, `lookup`. The correct format for each is below
 > **cnick add (userid/playerid) (nickname)** *replace userid / playerid with either their ingame id (normally a one or two digit number or their userid@steam). Anything typed after this will be counted as their nickname. This will add a new player to the file.*
+
 > **cnick update (userid/playerid) (nickname)** *replace userid / playerid with either their ingame id (normally a one or two digit number or their userid@steam). Anything typed after this will be counted as their nickname This will only work if the user already exists and overite their current nickname.*
+
 > **cnick remove (userid/playerid)** *replace userid / playerid with either their ingame id (normally a one or two digit number or their userid@steam). This will remove them and delete their nickname from the file. Their nickname will be reverted automatically.*
+
 > **cnick lookup (userid/playerid)** *replace userid / playerid with either their ingame id (normally a one or two digit number or their userid@steam). This will display the players current nickname set if they have one.*
 
 * **CNLIST** - Will output a table of all the players with assigned nicknames in the order they were added.
