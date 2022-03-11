@@ -19,7 +19,7 @@ namespace CustomNicks
         public override string Name { get; } = "CustomNicks";
         public override string Author { get; } = "XoMiya-WPC";
         public override string Prefix { get; } = "CustomNicks";
-        public override Version Version { get; } = new Version("2.0.0");
+        public override Version Version { get; } = new Version("2.0.1");
         public override Version RequiredExiledVersion { get; } = new Version(5, 0, 0);
         public Dictionary<string, string> NicknameChanges { get; private set; } = new Dictionary<string, string>{};
         private EventHandlers server;

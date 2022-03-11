@@ -23,19 +23,22 @@ namespace CNList
     public class CNList : ICommand
     {
         public string Command { get; } = "cnlist";
-        public string[] Aliases { get; } = { "cnl" };
+        public string[] Aliases { get; } = { };
         public string Description { get; } = "Displays a List of the current nicknames";
         public bool Execute(ArraySegment<string> arguments, ICommandSender sender, out string response)
         {
             //Check if command sender has the correct permissions
-            if (!sender.CheckPermission("CustomNicks.list"))
+            if (!sender.CheckPermission("customnicks.list"))
             {
-                response = "You do not have permission to run this command";
+                response = "You do not have permission to run this command!";
                 return false;
             }
-
             CustomNicks.CustomNicks.Instance.RefreshNicknames();
-
+            if (CustomNicks.CustomNicks.Instance.NicknameChanges.IsEmpty())
+            {
+                response = "There are no players in the dictionary!";
+                return false;
+            }
             var MaxDict = CustomNicks.CustomNicks.Instance.NicknameChanges.Max(x => x.Key.Length);
 
             StringBuilder sb = new StringBuilder();

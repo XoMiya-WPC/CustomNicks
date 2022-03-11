@@ -15,14 +15,14 @@ namespace CNReload
     public class CNReload : ICommand
     {
         public string Command { get; } = "cnreload";
-        public string[] Aliases { get; } = { "cnr" };
+        public string[] Aliases { get; } = { };
         public string Description { get; } = "Reloads the Custom Nicks Plugin";
         public bool Execute(ArraySegment<string> arguments, ICommandSender sender, out string response)
         {
             //Check if command sender has the correct permissions
-            if (!sender.CheckPermission("CustomNicks.reload"))
+            if (!sender.CheckPermission("customnicks.reload"))
             {
-                response = "You do not have permission to run this command";
+                response = "You do not have permission to run this command!";
                 return false;
             }
 

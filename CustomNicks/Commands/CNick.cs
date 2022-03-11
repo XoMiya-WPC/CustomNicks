@@ -22,9 +22,9 @@ namespace CustomNicks
         {
 
             //Check if command sender has the correct permissions
-            if (!sender.CheckPermission("CustomNicks.cnick"))
+            if (!sender.CheckPermission("customnicks.cnick"))
             {
-                response = "You do not have permission to run this command";
+                response = "You do not have permission to run this command!";
                 return false;
             }
             //Check if the command sender has included atleast 2 arguments, the add/remove/update and the ID
@@ -151,7 +151,7 @@ namespace CustomNicks
                         if (CustomNicks.Instance.NicknameChanges.ContainsKey(userId))
                         {
                             CustomNicks.Instance.NicknameChanges.TryGetValue(userId, out string value);
-                            response = $"Player {userId}'s nickname is set to {value}";
+                            response = $"Player {userId}'s nickname is set to <b><color=#ff00ff>{value}</color></b>";
                             return true;
                         }
                         else
