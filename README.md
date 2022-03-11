@@ -36,9 +36,9 @@ This plugin **WILL NOT WORK** on previous versions.
 
 <h1>Permissions</h1>
 
-* **CNICK** requires the `CustomNicks.cnick` permission.
-* **CNLIST** requires the `CustomNicks.list` permission.
-* **CNRELOAD** requires the `CuustomNicks.Reload` permission.
+* **CNICK** requires the `customnicks.cnick` permission.
+* **CNLIST** requires the `customnicks.list` permission.
+* **CNRELOAD** requires the `customnicks.Reload` permission.
 
 <h1>Info & Contact</h1>
 
